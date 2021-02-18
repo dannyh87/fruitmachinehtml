@@ -1,0 +1,91 @@
+html{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background-color: #264653;
+}
+
+.reelOne, .reelTwo, .reelThree{
+    overflow-y: hidden;
+    display:inline-block;
+    font-size: 8rem;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px 190px 160px 1fr 1fr;
+    justify-items: center;
+}
+h1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    font-size: 3rem;
+    color:#E9C46A;
+}
+.play{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: #2A9D8F;
+    border: 3px solid;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 2.5px 2.5px 1.25px #AAAAAA; 
+    align-items:baseline;
+    justify-items: center;
+    padding: 40px;
+}
+
+.reelOne{
+    grid-column: 1;
+    grid-row: 3;
+}
+.reelTwo{
+    grid-column: 2;
+    grid-row: 3;
+}
+.reelThree{
+    grid-column: 3;
+    grid-row: 3;
+}
+.holdOne{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.holdTwo{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.holdThree{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.bank{
+    grid-column: 1/2;
+    grid-row: 5;
+    font-size: 5rem;
+    color: white;
+}
+
+.holdOne, .holdTwo, .holdThree{
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 3px solid;
+    padding: 1rem;
+    background-color: #F4A261;
+    width:fit-content;
+    height: fit-content;
+    box-shadow: 2.5px 2.5px 1.25px #AAAAAA; 
+}
+
