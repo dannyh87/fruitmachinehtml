@@ -1,47 +1,62 @@
 html{
-    font-size:20px;
+    font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
+background-image: url(/Resources/pictures/fruitmachinecasino.jpeg);
 background-color: #264653;
+margin-left: 25%;
+margin-right: 25%;
+width: 50%;
 }
 
-.reelOne, .reelTwo, .reelThree{
+.reelOne, .reelTwo, .reelThree, .reelFour{
     overflow-y: hidden;
     display:inline-block;
-    font-size: 8rem;
-    width: 8rem;
-    height: 8rem;
-    line-height: 8rem;
+    font-size: 10vw;
+    width: 10vw;
+    height: 9.75vw;
+    line-height: 10vw;
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 180px 190px 160px 1fr 1fr;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     justify-items: center;
+    border: 5px solid gold;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
 }
 h1 {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1;
     text-align: center;
     font-size: 3rem;
     color:#E9C46A;
 }
 .play{
-    grid-column: 2;
+
+    grid-column: 1/5;
     grid-row: 2;
-    font-size: 2rem;
+    font-size: 2vw;
+    line-height: 2vw;
     font-weight: 400;
-    background-color: #2A9D8F;
     border: 3px solid;
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
     box-shadow: 2.5px 2.5px 1.25px #AAAAAA; 
+    background-color: silver;
     align-items:baseline;
     justify-items: center;
-    padding: 40px;
+    padding: 1.5rem;
+    appearance: none;
+    outline: none;
+}
+
+.play:active {
+    background: #E9C46A;
 }
 
 .reelOne{
@@ -55,6 +70,12 @@ h1 {
 .reelThree{
     grid-column: 3;
     grid-row: 3;
+}
+
+.reelFour{
+grid-column: 4;
+grid-row: 3;
+
 }
 .holdOne{
     grid-column: 1;
@@ -71,21 +92,27 @@ h1 {
     grid-row: 4;
 }
 
+.holdFour{
+    grid-column: 4;
+    grid-row:4;
+}
+
 .bank{
-    grid-column: 1/2;
+    grid-column: 1/5;
     grid-row: 5;
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
 }
 
-.holdOne, .holdTwo, .holdThree{
-    font-size: 2rem;
+#hold{
+    font-size: 2vw;
     border-radius: 10px;
     border: 3px solid;
     padding: 1rem;
-    background-color: #F4A261;
+    background-color: silver;
     width:fit-content;
     height: fit-content;
     box-shadow: 2.5px 2.5px 1.25px #AAAAAA; 
+    margin-top: 1vh;
 }
 
