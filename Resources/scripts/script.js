@@ -5,9 +5,9 @@ const randomNumber = function (high) {
   return Math.floor(Math.random() * high);
 };
 
-let money = 1000;
+let money = 100;
 
-let costPerSpin = 10;
+let costPerSpin = 1;
 
 var reels = document.getElementsByClassName("reel");
 
@@ -23,9 +23,9 @@ updateMoney();
 function priceMoney(level, fruit) {
   fruit += 1
   if (level == 'big win') {
-    return 1000 * fruit * fruit
+    return 30 * fruit * fruit
   } else {
-    return 500 * fruit
+    return 15 * fruit
   }
 }
 
